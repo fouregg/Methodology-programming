@@ -242,6 +242,13 @@ function drawImages()
         image(imgMusicOff, width - 80, 5);
 }
 
+function drawSlider()
+{
+    console.log("test");
+    color_slider = createSlider(0, 255, 125);  
+    color_slider.position(100, 100); 
+}
+
 function draw()
 {
    background(240);
@@ -252,6 +259,7 @@ function draw()
    drawScore();
    bulletLogic();
    drawImages();
+   drawSlider();
 }
 
 function keyPressed()
